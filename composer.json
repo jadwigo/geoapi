@@ -1,0 +1,44 @@
+{
+    "name": "jadwigo/geoapi",
+    "description": "This extension allows you to search for addresses near a latitude/longitude location or near another address. You can use this to plot the addresses on a google map.",
+    "type": "bolt-extension",
+    "keywords": [
+        "geolocation",
+        "map", 
+        "address"
+    ],
+    "require": {
+        "bolt/bolt": "^3.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^4.7"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Lodewijk Evers",
+            "email": "jadwigo@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "autoload": {
+        "psr-4": {
+            "Bolt\\Extension\\Jadwigo\\GeoApi\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Bolt\\Extension\\Jadwigo\\GeoApi\\Tests\\": "tests",
+            "Bolt\\Tests\\": "vendor/bolt/bolt/tests/phpunit/unit/"
+        }
+    },
+    "extra": {
+        "bolt-assets": "web",
+        "bolt-class": "Bolt\\Extension\\Jadwigo\\GeoApi\\GeoApiExtension",
+        "bolt-icon": "bolt-icon.png",
+        "bolt-screenshots": [
+            "screenshots/screenshot1.png"
+        ]
+    }
+}
